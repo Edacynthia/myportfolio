@@ -1,14 +1,14 @@
 import { Head } from '@inertiajs/react';
 import AmbientGlow from '@/components/portfolio/ambient-glow';
+import ContactSection from '@/components/portfolio/contact-section';
 import Container from '@/components/portfolio/container';
 import LanyardCard from '@/components/portfolio/lanyard-card';
-import ThemeToggle from '@/components/theme-toggle';
+import ProjectsSection from '@/components/portfolio/projects-section';
 import RoleMarquee from '@/components/portfolio/role-marquee';
 import ScrollToTop from '@/components/portfolio/scroll-to-top';
 import SkillsSection from '@/components/portfolio/skills-section';
 import TerminalWidget from '@/components/portfolio/terminal-widget';
-import ProjectsSection from '@/components/portfolio/projects-section';
-import ContactSection from '@/components/portfolio/contact-section';
+import ThemeToggle from '@/components/theme-toggle';
 
 export default function Portfolio() {
     return (

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
 import { ArrowUp } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
+import { useEffect, useState } from 'react';
 
 export default function ScrollToTop() {
     const [progress, setProgress] = useState(0);
@@ -16,6 +16,7 @@ export default function ScrollToTop() {
         };
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
+
         return () => window.removeEventListener('scroll', onScroll);
     }, []);
 

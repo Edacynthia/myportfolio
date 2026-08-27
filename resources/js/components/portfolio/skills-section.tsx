@@ -22,7 +22,11 @@ function SkillCell({ name, slug }: Skill) {
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const el = ref.current;
-        if (!el) return;
+
+        if (!el) {
+return;
+}
+
         const rect = el.getBoundingClientRect();
         el.style.setProperty('--x', `${e.clientX - rect.left}px`);
         el.style.setProperty('--y', `${e.clientY - rect.top}px`);

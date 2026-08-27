@@ -22,11 +22,10 @@ export default function TerminalWidget() {
     const [visibleLines, setVisibleLines] = useState<string[]>([]);
     const [currentText, setCurrentText] = useState('');
     const [lineIndex, setLineIndex] = useState(0);
-    const [done, setDone] = useState(false);
+    const done = lineIndex >= LINES.length;
 
     useEffect(() => {
-        if (lineIndex >= LINES.length) {
-            setDone(true);
+        if (done){
             return;
         }
 
@@ -49,7 +48,7 @@ export default function TerminalWidget() {
         }, TYPE_SPEED);
 
         return () => clearInterval(typeInterval);
-    }, [lineIndex]);
+    }, [lineIndex, done]);
 
     const renderLine = (text: string, isCommand: boolean) => {
         if (isCommand) {
@@ -61,6 +60,7 @@ export default function TerminalWidget() {
                 </div>
             );
         }
+
         return <div className="pl-1 text-neutral-400">{text}</div>;
     };
 
@@ -78,6 +78,7 @@ export default function TerminalWidget() {
             <div className="min-h-[220px] space-y-1.5 p-5 font-mono text-sm">
                 {visibleLines.map((text, i) => {
                     const meta = LINES[i];
+
                     return (
                         <div key={i}>
                             {renderLine(text, meta.type === 'command')}
