@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
@@ -21,14 +20,14 @@ class ContactMessage extends Mailable
         public string $senderName,
         public string $senderEmail,
         public string $body,
-     ) {}
+    ) {}
 
     /**
      * Get the message envelope.
      */
     public function envelope(): Envelope
     {
-       return new \Illuminate\Mail\Mailables\Envelope(
+        return new Envelope(
             subject: "Portfolio contact from {$this->senderName}",
             replyTo: [$this->senderEmail],
         );
@@ -39,7 +38,7 @@ class ContactMessage extends Mailable
      */
     public function content(): Content
     {
-        return new \Illuminate\Mail\Mailables\Content(
+        return new Content(
             markdown: 'mail.contact-message',
         );
     }
