@@ -24,17 +24,15 @@ function SkillCell({ name, slug }: Skill) {
         const el = ref.current;
 
         if (!el) {
-return;
-}
+            return;
+        }
 
         const rect = el.getBoundingClientRect();
         el.style.setProperty('--x', `${e.clientX - rect.left}px`);
         el.style.setProperty('--y', `${e.clientY - rect.top}px`);
     };
 
-    const handleImgError = (
-        e: React.SyntheticEvent<HTMLImageElement>,
-    ) => {
+    const handleImgError = (e: React.SyntheticEvent<HTMLImageElement>) => {
         e.currentTarget.src = `https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${slug}.svg`;
     };
 
@@ -69,7 +67,7 @@ export default function SkillsSection() {
         <section id="skills" className="py-24">
             <Container>
                 <p className="font-mono text-sm text-accent-500">02 — Skills</p>
-                <h2 className="font-display mt-3 text-4xl font-bold md:text-5xl">
+                <h2 className="mt-3 font-display text-4xl font-bold md:text-5xl">
                     What I work with
                 </h2>
 

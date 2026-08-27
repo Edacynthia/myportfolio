@@ -10,7 +10,7 @@ export default function RoleMarquee() {
 
     return (
         <div className="mt-16 w-full max-w-md overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-            <div className="flex w-max animate-marquee gap-6">
+            <div className="animate-marquee flex w-max gap-6">
                 {track.map((role, i) => (
                     <span
                         key={i}

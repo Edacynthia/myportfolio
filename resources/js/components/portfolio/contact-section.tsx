@@ -42,12 +42,12 @@ export default function ContactSection() {
                         <p className="font-mono text-sm text-accent-500">
                             04 — Contact
                         </p>
-                        <h2 className="font-display mt-3 text-4xl font-bold md:text-6xl">
+                        <h2 className="mt-3 font-display text-4xl font-bold md:text-6xl">
                             Let's build something.
                         </h2>
                         <p className="mx-auto mt-4 max-w-md text-neutral-600 dark:text-neutral-400">
-                            Have a project in mind, an opportunity to share,
-                            or just want to say hi? Drop a message below.
+                            Have a project in mind, an opportunity to share, or
+                            just want to say hi? Drop a message below.
                         </p>
                     </div>
 
@@ -123,8 +123,8 @@ export default function ContactSection() {
                     </form>
 
                     <div className="mt-10 flex justify-center gap-6">
-                        
-                           <a href="https://github.com/Edacynthia"
+                        <a
+                            href="https://github.com/Edacynthia"
                             target="_blank"
                             rel="noreferrer"
                             className="text-neutral-500 transition-colors hover:text-accent-500"
@@ -132,8 +132,9 @@ export default function ContactSection() {
                         >
                             <Github className="h-5 w-5" />
                         </a>
-                        
-                          <a href="https://linkedin.com/in/your-profile"
+
+                        <a
+                            href="https://linkedin.com/in/your-profile"
                             target="_blank"
                             rel="noreferrer"
                             className="text-neutral-500 transition-colors hover:text-accent-500"
@@ -141,8 +142,9 @@ export default function ContactSection() {
                         >
                             <Linkedin className="h-5 w-5" />
                         </a>
-                        
-                           <a href="https://wa.me/8121112943"
+
+                        <a
+                            href="https://wa.me/8121112943"
                             target="_blank"
                             rel="noreferrer"
                             className="text-neutral-500 transition-colors hover:text-accent-500"

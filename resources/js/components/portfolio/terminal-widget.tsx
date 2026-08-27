@@ -25,7 +25,7 @@ export default function TerminalWidget() {
     const done = lineIndex >= LINES.length;
 
     useEffect(() => {
-        if (done){
+        if (done) {
             return;
         }
 

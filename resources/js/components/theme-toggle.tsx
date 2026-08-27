@@ -4,10 +4,10 @@ import { useAppearance } from '@/hooks/use-appearance';
 
 export default function ThemeToggle() {
     const { resolvedAppearance, updateAppearance } = useAppearance();
-   const [mounted, setMounted] = useState(false);
+    const [mounted, setMounted] = useState(false);
 
-// eslint-disable-next-line react-hooks/set-state-in-effect -- required to avoid SSR/client hydration mismatch on theme icon
-useEffect(() => setMounted(true), []);
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- required to avoid SSR/client hydration mismatch on theme icon
+    useEffect(() => setMounted(true), []);
 
     const toggle = () => {
         updateAppearance(resolvedAppearance === 'dark' ? 'light' : 'dark');

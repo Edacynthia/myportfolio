@@ -70,8 +70,8 @@ function ProjectCard({ project }: { project: Project }) {
         const el = ref.current;
 
         if (!el) {
-return;
-}
+            return;
+        }
 
         const rect = el.getBoundingClientRect();
         el.style.setProperty('--x', `${e.clientX - rect.left}px`);
@@ -134,8 +134,8 @@ return;
                 </div>
 
                 <div className="mt-6 flex items-center gap-4 text-sm">
-                    
-                       <a href={project.github}
+                    <a
+                        href={project.github}
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-1.5 text-neutral-500 hover:text-accent-500"
@@ -143,8 +143,8 @@ return;
                         <Github className="h-4 w-4" /> Code
                     </a>
                     {project.live && (
-                        
-                          <a href={project.live}
+                        <a
+                            href={project.live}
                             target="_blank"
                             rel="noreferrer"
                             className="flex items-center gap-1.5 text-neutral-500 hover:text-accent-500"
@@ -165,7 +165,7 @@ export default function ProjectsSection() {
                 <p className="font-mono text-sm text-accent-500">
                     03 — Projects
                 </p>
-                <h2 className="font-display mt-3 text-4xl font-bold md:text-5xl">
+                <h2 className="mt-3 font-display text-4xl font-bold md:text-5xl">
                     Things I've built
                 </h2>
 
