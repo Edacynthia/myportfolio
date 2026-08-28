@@ -8,7 +8,7 @@ import RoleMarquee from './components/portfolio/role-marquee';
 import ScrollToTop from './components/portfolio/scroll-to-top';
 import SkillsSection from './components/portfolio/skills-section';
 import TerminalWidget from './components/portfolio/terminal-widget';
-import Signature from './components/portfolio/signature';
+// import Signature from './components/portfolio/signature';
 import ThemeToggle from './components/theme-toggle';
 import { motion } from 'motion/react';
 
@@ -112,7 +112,7 @@ export default function App() {
                                     </a>
                                 </div>
                                 <RoleMarquee />
-                                <Signature className="mt-10 h-20 w-72 text-accent-500" />
+                                {/* <Signature className="mt-10 h-20 w-72 text-accent-500" /> */}
                             </div>
 
                             <div className="relative z-10 flex justify-center">
