@@ -8,6 +8,7 @@ import RoleMarquee from './components/portfolio/role-marquee';
 import ScrollToTop from './components/portfolio/scroll-to-top';
 import SkillsSection from './components/portfolio/skills-section';
 import TerminalWidget from './components/portfolio/terminal-widget';
+import Signature from './components/portfolio/signature';
 import ThemeToggle from './components/theme-toggle';
 import { motion } from 'motion/react';
 
@@ -86,17 +87,15 @@ export default function App() {
                         <div className="grid grid-cols-1 items-start gap-6 md:grid-cols-[1.3fr_1fr]">
                             <div className="relative z-10">
                                 <p className="font-mono text-lg text-accent-500">Hi, I'm</p>
-                                <h1 className="mt-1 font-display text-4xl leading-none font-bold md:text-5xl">
+                                <h1 className="mt-2 font-display text-4xl leading-none font-bold md:text-5xl">
                                     Cynthia
                                 </h1>
-                                <p className="mt-4 max-w-md text-lg text-neutral-600 dark:text-neutral-400">
+                                <p className="mt-6 max-w-md text-lg text-neutral-600 dark:text-neutral-400">
                                     I build{' '}
                                     <span className="font-medium text-accent-500">
-                                        digital realities that work
+                                        thoughtful digital experiences from the ground up
                                     </span>{' '}
-                                    — turning ideas into fast, dependable web
-                                    products with Laravel and React, down to the
-                                    small details most people skip.
+                                    — from clean, responsive interfaces to reliable systems behind them. I work with React, Tailwind CSS, and Laravel, and I’m passionate about creating technology that is useful, secure, and built to last.
                                 </p>
                                 <div className="mt-8 flex gap-4">
                                     
@@ -113,6 +112,7 @@ export default function App() {
                                     </a>
                                 </div>
                                 <RoleMarquee />
+                                <Signature className="mt-10 h-20 w-72 text-accent-500" />
                             </div>
 
                             <div className="relative z-10 flex justify-center">
@@ -135,35 +135,32 @@ export default function App() {
                             </div>
 
                             <div className="space-y-5 text-neutral-600 dark:text-neutral-400">
-                                <p>
-                                    I'm a final-year Computer Science student at
-                                    Edo State University, Iyahmo, based in
-                                    Lagos, Nigeria. Most of my time goes into
-                                    building things end-to-end — Laravel on the
-                                    backend, React on the front, and enough
-                                    curiosity about networking and systems
-                                    design to actually understand what's
-                                    happening underneath.
-                                </p>
-                                <p>
-                                    Right now I'm deep in my final-year project,{' '}
-                                    <span className="font-medium text-neutral-900 dark:text-neutral-100">
-                                        CampusSkillNet
-                                    </span>{' '}
-                                    — a university-exclusive skill and job
-                                    marketplace built to connect students with
-                                    real opportunities on campus. It's taught me
-                                    more about shipping something real than any
-                                    single course has.
-                                </p>
-                                <p>
-                                    Outside of coursework, I care about the
-                                    parts of a product most people don't notice
-                                    until they're missing — the loading state
-                                    that doesn't jar, the form that tells you
-                                    exactly what went wrong, the page that still
-                                    feels fast on a bad connection.
-                                </p>
+                               <p>
+    I'm a Computer Science graduate based in Warri, Nigeria, with a
+    passion for building practical, reliable digital experiences. I work
+    across the stack with React, Tailwind CSS, and Laravel, while
+    exploring cybersecurity, networking, and the systems that make
+    technology work underneath.
+</p>
+
+<p>
+    One of my biggest projects is{' '}
+    <span className="font-medium text-neutral-900 dark:text-neutral-100">
+        CampusSkillNet
+    </span>{' '}
+    — a university-focused skill and job marketplace designed to connect
+    students with real opportunities within their campus community.
+    Building it taught me how to take an idea from a concept to a
+    functional product and everything in between.
+</p>
+
+<p>
+    I care about the details that make technology feel effortless — a
+    responsive interface, a smooth user experience, meaningful error
+    handling, reliable functionality, and security considered from the
+    start. I'm constantly learning, experimenting, and looking for better
+    ways to build technology that is both useful and secure.
+</p>
                             </div>
                         </div>
                     </Container>

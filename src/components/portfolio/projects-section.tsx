@@ -20,7 +20,7 @@ const projects: Project[] = [
             'A university-exclusive skill and job marketplace connecting students with real opportunities on campus — from vendors selling products to students offering services. My final-year project.',
         stack: ['Laravel', 'MySQL', 'Blade/React'],
         github: 'https://github.com/Edacynthia/Campus-skill-marketplace',
-        image: '/images/projects/campusskillnet.png',
+        image: '/images/projects/Screenshot (728).png',
         size: 'md:col-span-2 md:row-span-2',
     },
     {
