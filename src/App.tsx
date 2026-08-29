@@ -91,12 +91,15 @@ export default function App() {
                                     Cynthia
                                 </h1>
                                 <p className="mt-6 max-w-md text-lg text-neutral-600 dark:text-neutral-400">
-                                    I build{' '}
-                                    <span className="font-medium text-accent-500">
-                                        thoughtful digital experiences from the ground up
-                                    </span>{' '}
-                                    — from clean, responsive interfaces to reliable systems behind them. I work with React, Tailwind CSS, and Laravel, and I’m passionate about creating technology that is useful, secure, and built to last.
-                                </p>
+    I build{' '}
+    <span className="font-medium text-accent-500">
+        thoughtful digital experiences from the ground up
+    </span>{' '}
+    — from clean, responsive interfaces to the reliable systems
+    behind them. I work with React, Tailwind CSS, and Laravel, and
+    care about building technology that's useful, secure, and built
+    to last.
+</p>
                                 <div className="mt-8 flex gap-4">
                                     
                                       <a href="#projects"
@@ -134,34 +137,34 @@ export default function App() {
                                 <TerminalWidget />
                             </div>
 
-                            <div className="space-y-5 text-neutral-600 dark:text-neutral-400">
-                               <p>
-    I'm a Computer Science graduate based in Warri, Nigeria, with a
-    passion for building practical, reliable digital experiences. I work
-    across the stack with React, Tailwind CSS, and Laravel, while
-    exploring cybersecurity, networking, and the systems that make
-    technology work underneath.
-</p>
-
-<p>
-    One of my biggest projects is{' '}
-    <span className="font-medium text-neutral-900 dark:text-neutral-100">
-        CampusSkillNet
-    </span>{' '}
-    — a university-focused skill and job marketplace designed to connect
-    students with real opportunities within their campus community.
-    Building it taught me how to take an idea from a concept to a
-    functional product and everything in between.
-</p>
-
-<p>
-    I care about the details that make technology feel effortless — a
-    responsive interface, a smooth user experience, meaningful error
-    handling, reliable functionality, and security considered from the
-    start. I'm constantly learning, experimenting, and looking for better
-    ways to build technology that is both useful and secure.
-</p>
-                            </div>
+                           <div className="space-y-5 text-lg text-neutral-600 dark:text-neutral-400">
+    <p>
+        I'm Cynthia. I started out typing tutorial code without
+        really understanding why any of it worked, and somewhere
+        along the way it turned into actually building things — APIs
+        that have to handle real requests, interfaces that have to
+        make sense to someone who's never seen the code behind them.
+    </p>
+    <p>
+        Right now that's{' '}
+        <span className="font-medium text-neutral-900 dark:text-neutral-100">
+            Campus Skill Marketplace
+        </span>{' '}
+        — a university-exclusive skill and job marketplace I'm
+        building from the ground up. It's taught me more about
+        actually shipping software than any single lesson has.
+    </p>
+    <p>
+        I care about the details most people don't notice until
+        they're missing — the loading state that doesn't jar, the
+        error message that actually tells you what went wrong.
+    </p>
+    <p>
+        Outside of code, there's always a movie somewhere in progress
+        — one of the few things that reliably pulls my attention off
+        a screen full of code.
+    </p>
+</div>
                         </div>
                     </Container>
                 </section>
