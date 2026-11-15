@@ -134,7 +134,7 @@ export default function ContactSection() {
                         </a>
 
                         <a
-                            href="https://linkedin.com/in/your-profile"
+                            href="https://www.linkedin.com/in/eda-cynthia/"
                             target="_blank"
                             rel="noreferrer"
                             className="text-neutral-500 transition-colors hover:text-accent-500"
