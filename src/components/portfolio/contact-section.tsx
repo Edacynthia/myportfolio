@@ -120,7 +120,7 @@ export default function ContactSection() {
                         <a href="https://github.com/Edacynthia" target="_blank" rel="noreferrer" className="text-neutral-500 transition-colors hover:text-accent-500" aria-label="GitHub">
     <GithubIcon className="h-5 w-5" />
 </a>
-<a href="https://www.linkedin.com/in/eda-cynthia/" target="_blank" rel="noreferrer" className="text-neutral-500 transition-colors hover:text-accent-500" aria-label="LinkedIn">
+<a href ="https://www.linkedin.com/in/eda-cynthia/" target="_blank" rel="noreferrer" className="text-neutral-500 transition-colors hover:text-accent-500" aria-label="LinkedIn">
     <LinkedinIcon className="h-5 w-5" />
 </a>
                         <a href="https://wa.me/8121112943" target="_blank" rel="noreferrer" className="text-neutral-500 transition-colors hover:text-accent-500" aria-label="WhatsApp">
